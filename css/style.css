@@ -46,6 +46,7 @@
     --white-bg-colors:#fff;
     --black-bg-color:#000;
 }
+
 *,
 ::after,
 ::before {
@@ -58,7 +59,9 @@ html{
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
-
+ul{
+    list-style: none;
+}
 body{
     height: 100%;
     display: flex;
@@ -70,9 +73,585 @@ body{
     color: var(--black-text-color);
     background-color: var(--white-bg-colors);
 }
+@media (max-width: 575.98px) {
+    .desktop-nav {
+        display: none;
+    }
+    .small_nav{
+        display: block;
+    }
+}
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+.header{
+    padding: 3.4rem 0 10rem;
+    background-image:url("../image/png/freepik--Music--inject-4.png"), linear-gradient(74.79deg, #FF9292 -7.33%, #DE5150 90.21%);
+    background-size: 812px 632px,cover;
+    background-repeat: no-repeat;
+    background-position: top 50% left 0px, center;
+}
+.header-top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 64px;
+}
 .container{
-    width: 100%;
-    max-width: 1180px;
+    width:min(100%,1180px);
     padding: 0 1.5rem;
     margin: 0 auto;
 }
+.header-item__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:32px ;
+} 
+.list__item{
+    width:47px ;
+    height: 47px;
+    background-color:#fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+.header-bottom{
+    display: flex;
+    gap: 98px;
+    
+}
+.header-item__list span{
+    background-color:var(--white-bg-colors);
+    width: 2px;
+    height: 47px;
+    opacity: 0.5;
+}
+.header-bottom__content{
+    width: 517px;
+height: 514px;
+    margin-top: 43px;
+}
+.site-logo-img{
+    margin-left:-60px;
+}
+.site-bar{
+    cursor: pointer;
+}
+.header-bottom_price{
+    display: flex;
+    gap: 30px;
+}
+.header-bottom_price span{
+    width: 2px;
+    height: 57px;
+    background-color: #fff;
+    /* border: 2px solid #FFFFFF;
+    transform: rotate(90deg); */
+}
+.header-bottom__title{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 99.1702px;
+    line-height: 100%;
+    /* or 99px */
+    
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    margin-bottom: 45px;
+}
+.header-bottom__subtitle{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 140%;
+    /* identical to box height, or 31px */
+    
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    
+}
+.price__title{
+    font-family: 'Rubik';
+font-style: normal;
+font-weight: 700;
+font-size: 44px;
+line-height: 130%;
+/* or 57px */
+
+
+color: #FFFFFF;
+}
+.price__title__small{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 140%;
+    /* or 43px */
+    
+    text-decoration-line: line-through;
+    
+    color: #FFFFFF;
+    
+    opacity: 0.7;
+}
+.buy_now__btn{
+    margin-top: 35px;
+    width: 191px;
+    height: 61px;
+    left: 834px;
+    top: 660px;
+    
+    background: #FFFFFF;
+    border-radius: 62px;
+    border: none;
+    cursor: pointer;
+}
+.buy_now__btn h3{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 140%;
+    /* identical to box height, or 31px */
+    
+    
+    color: #FF4948;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.collection__title{
+    margin-top: 130px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 130%;
+    /* or 57px */
+    
+    text-align: center;
+    
+    color: #180202;
+}
+.collection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1140px;
+}
+.collect-img{
+    display: flex;
+    width:1141px ;
+}
+.collect-list{
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+.collect-img {
+    gap: 67px;
+}
+.left-strelka {
+}
+.collect-list {
+}
+.red_image {
+    margin: 0px -164px 0px 0px;
+}
+.blue_image {
+    width: 62.9rem;
+    height: 59.9rem;
+    z-index: -1;    
+}
+.orange_image {
+    margin: 0px 0px 0px -164px;
+    z-index: 0;
+}
+.right-strelka {
+}
+.image_collection{
+    z-index: 1;
+}
+
+.about{
+    display: flex;
+    gap: 78px;
+}
+.about-item{
+    display: flex;
+    gap: 20px;
+}
+.about-title{
+    margin-bottom: 61px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 130%;
+    /* or 57px */
+    
+    
+    color: #180202;
+}
+.about_div {
+}
+.battery_title {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 140%;
+    /* or 43px */
+    
+    
+    color: #180202;
+}
+.battery_subtitle {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    
+    
+    color: #180202;
+    
+    opacity: 0.7;
+}
+.battery_learn {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    
+    
+    color: #FF4948;
+}
+.one{
+  margin-bottom: 41px;
+}
+.two{
+    margin-bottom: 41px;
+}
+
+.product {
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+.product-title {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 130%;
+    /* or 57px */
+    
+    text-align: center;
+    
+    color: #180202;
+}
+.subtitle-product {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    
+    text-align: center;
+    
+    color: #180202;
+    
+    opacity: 0.7;
+}
+.grid ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 33px;
+}
+.grid_list {
+}
+.grid_item {
+}
+.stars-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+.stars_number {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    
+    text-align: center;
+    
+    color: #180202;
+}
+.color_headphone {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+.red_headphone {
+        
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 140%;
+/* identical to box height, or 31px */
+
+
+color: #180202;
+
+}
+.cost-headphone {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 140%;
+    /* identical to box height, or 31px */
+    
+    text-align: center;
+    
+    color: #180202;
+    
+}
+.stars-image{
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+.get_box {
+    display: flex;
+}
+.box_left {
+}
+.box_right {
+}
+.box_title {
+    margin-top: 69px;
+    margin-bottom: 48px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 130%;
+    /* or 57px */
+    
+    
+    color: #000000;
+}
+.list_strelka {
+    
+}
+.strelka_item {
+    display: flex;
+    gap: 20px;
+}
+.line_grey{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.text_box{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    /* identical to box height, or 31px */
+    
+    
+    color: #000000;
+    
+    opacity: 0.7;
+}
+
+.bg_nota{
+    background-image: url(../image/png/notaa.png);
+    width: 1235px;
+    height: 323px;
+}
+.subscribe{
+    
+}
+.subscribe_box{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    
+    margin-left: 248px;
+    margin-top: -292px;
+    width: 712px;
+    height: 292px;
+    left: 452px;
+    top: 3949px;
+    
+    background: #FFF4F4;
+    border-radius: 20px;
+    margin-bottom: 130px;
+}
+.Subscribe-title{
+    padding-top: 54px;
+    font-family: "rubik";
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 130%;
+    /* or 57px */
+    
+    text-align: center;
+    
+    color: #180202;
+}
+.subs_text{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+    
+    text-align: center;
+    
+    color: #180202;
+    
+    opacity: 0.7;
+}
+.email_btn{
+    margin-top: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 503px;
+    height: 61px;
+    left: 557px;
+    top: 4126px;
+    
+    background: #FFFFFF;
+    border-radius: 73px;
+}
+.email_input{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    /* identical to box height, or 27px */
+    
+    
+    color: #180202;
+    
+    opacity: 0.3;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border: none;
+    padding-left: 30px; 
+}
+.btn_subscribe{
+    padding: 15px 30px;
+    gap: 10px;
+    width: 167px;
+    height: 61px;
+    left: 894px;
+    top: 4126px;
+    
+    background: #FF4948;
+    border-radius: 50px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 140%;
+    /* identical to box height, or 31px */
+    
+    cursor: pointer;
+    color: #FFFFFF;
+    border: none;
+}
+.footer{
+    background-image: linear-gradient(74.79deg, #FF9292 -7.33%, #DE5150 90.21%);
+}
+.footer_bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 189px;
+
+}
+.site-logo {
+}
+.site-logo__icon {
+}
+.menu__footer {
+    display: flex;
+    gap: 30px;
+}
+.menu__footer_item a{
+    text-decoration: none;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 140%;
+    /* identical to box height, or 31px */
+    
+    
+    color: #FFFFFF;
+    
+    transform: rotate(-0.24deg);
+}
+.social_list {
+    display: flex;
+    gap: 35px;
+}
+.social__item {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+.footer_link{
+    display: flex;
+    align-items: center;
+    gap: 210px;
+}
+
